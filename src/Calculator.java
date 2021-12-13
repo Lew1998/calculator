@@ -9,7 +9,11 @@ public class Calculator {
             String[] example = scanner.nextLine().split(" ");
             Checker checker = new Checker();
             boolean isRoman = checker.checkRomanOrArabic(example);
-            calculate(isRoman, Integer.parseInt(example[0]), example[1], Integer.parseInt(example[2]));
+            try {
+                calculate(isRoman, Integer.parseInt(example[0]), example[1], Integer.parseInt(example[2]));
+            } catch (Exception ex) {
+                System.err.println(ex.getMessage());
+            }
         }
     }
 
