@@ -28,6 +28,6 @@ public class Calculator {
     private static void printResult(boolean isRoman, int result) {
         if (isRoman) {
             System.out.println(numbersConverter.transformArabicToRoman(result));
-        } else System.out.println(result);
+        } else System.out.println( result);
     }
 }
